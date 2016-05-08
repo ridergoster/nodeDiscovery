@@ -1,0 +1,26 @@
+{
+  "name": "Booking",
+  "plural": "bookings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "dateStart": {
+      "type": "date",
+      "required": true
+    },
+    "dateEnd": {
+      "type": "date",
+      "required": true
+    },
+    "price": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
