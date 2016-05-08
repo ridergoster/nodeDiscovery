@@ -2,5 +2,14 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mongodbConnector": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "bookingscar",
+    "password": "",
+    "name": "mongodbConnector",
+    "user": "",
+    "connector": "mongodb"
   }
 }
