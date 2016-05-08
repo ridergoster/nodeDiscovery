@@ -14,30 +14,30 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mongodbConnector"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "mongodbConnector",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "mongodbConnector",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "mongodbConnector",
     "public": false
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "mongodbConnector",
     "public": false
   },
   "Car": {
-    "dataSource": "db",
+    "dataSource": "mongodbConnector",
     "public": true
   },
   "Booking": {
-    "dataSource": "db",
+    "dataSource": "mongodbConnector",
     "public": true
   }
 }
