@@ -16,6 +16,16 @@ angular
         templateUrl: 'views/all-cars.html',
         controller: 'AllCarsController'
       })
+      .state('add-car', {
+        url: '/add-car',
+        templateUrl: 'views/add-car.html',
+        controller: 'AddCarController'
+      })
+      .state('add-booking', {
+        url: '/add-booking/:car',
+        templateUrl: 'views/add-booking.html',
+        controller: 'AddBookingController'
+      })
       .state('forbidden', {
         url: '/forbidden',
         templateUrl: 'views/forbidden.html',

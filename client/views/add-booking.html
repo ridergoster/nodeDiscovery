@@ -1,0 +1,33 @@
+<section>
+  <form name="form" ng-submit="addBooking()">
+    <fieldset>
+      <legend>Add Booking</legend>
+
+      <div class="form-group">
+        <label>Date Start</label>
+        <input type="date"
+               ng-model="booking.dateStart"
+               ng-required="true"
+               ng-min="{{ today }}"
+               ng-change="booking.price = car.price * daysBetween(booking.dateStart, booking.dateEnd)">
+      </div>
+      <div class="form-group">
+        <label>Date End</label>
+        <input type="date"
+               ng-model="booking.dateEnd"
+               ng-required="true"
+               ng-min="{{ today }}"
+               ng-change="booking.price = car.price * daysBetween(booking.dateStart, booking.dateEnd) + car.price">
+      </div>
+      <div class="form-group">
+        <label>Price</label>
+        <span>{{ booking.price }}$</span>
+      </div>
+
+      <div class="actions">
+        <label></label>
+        <button>BOOK THIS CAR</button>
+      </div>
+    </fieldset>
+  </form>
+</section>
