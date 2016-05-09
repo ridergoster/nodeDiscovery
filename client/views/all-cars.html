@@ -1,0 +1,12 @@
+<section>
+  <article ng-repeat="r in cars.slice().reverse()">
+    <header>
+      <h1>{{ r.brand }}: {{ r.model }}</h1>
+      <h2>Seat: {{ r.seat }} doorNumber: {{ r.doorNumber }}<br />Price: {{ r.price }}$/day</h2>
+    </header>
+    <div ng-click="book(r)">
+      <label></label>
+      <button>Add Booking</button>
+    </div>
+  </article>
+</section>
